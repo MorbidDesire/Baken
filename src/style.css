@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@800&family=Ysabeau+Office&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --primary: #122F4A;
   --white: #fff;
@@ -30,12 +34,11 @@ body {
 
 #deliver-frame-mini {
   position: absolute;
-  top: 60%;
-  right: 50%;
+  top: 57%;
+  right: 57%;
   z-index: 2;
   width: 153.962px;
   height: 153.962px;
-  transform: rotate(15deg);
   flex-shrink: 0;
 }
 
@@ -103,6 +106,8 @@ body {
   line-height: normal;
   letter-spacing: -0.4px;
   text-transform: uppercase;
+  text-decoration: none;
+  height: 30px;
 }
 
 .textbox-2 {
@@ -116,6 +121,8 @@ body {
   line-height: normal;
   letter-spacing: -0.4px;
   text-transform: uppercase;
+  text-decoration: none;
+  height: 30px;
 }
 
 .sub-container {
@@ -213,6 +220,148 @@ body {
   align-self: stretch;
 }
 
+.container-5 {
+  width: 1440px;
+  align-items: flex-start;
+}
+
+.container-51 {
+  padding: 64px 16px;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+
+  background: var(--Blue, #C2D0F4);
+  background: var(--Blue, color(display-p3 0.7817 0.8142 0.9333));
+}
+
+.container-511 {
+  padding: 0px 8px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.container-512 {
+  width: 744px;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.container-5121 {
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.container-51211 {
+  align-items: flex-start;
+  gap: 24px;
+  flex: 1 0 0;
+}
+
+.container-51221 {
+  padding: 0px 16px 16px 16px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.star {
+  color: color(display-p3 0.9917 0.2562 0.2562);
+
+  font-family: Ysabeau Office;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+
+.input-select-container {
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.input-select {
+  padding: 10px 16px;
+  align-items: center;
+  align-self: stretch;
+  border: none;
+
+  border-radius: 24px;
+  background: var(--White, color(display-p3 1 1 1));
+}
+
+input {
+  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
+
+  font-family: Ysabeau Office;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+
+#cities {
+  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
+
+  background: var(--White, color(display-p3 1 1 1)) url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12' fill='none'%3e%3cpath d='M4 3.5L10 9.5L16 3.5' stroke='%23122F4A' style='stroke:%23122F4A;stroke:color(display-p3 0.0693 0.1849 0.2917);stroke-opacity:1;'/%3e%3c/svg%3e") no-repeat right;
+  background-position-x: calc(100% - 12px);
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  font-family: Ysabeau Office;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+
+select>option {
+  border: 100px;
+}
+
+input::placeholder {
+  color: var(--Black, #00314F);
+  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
+
+  font-family: Ysabeau Office;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  opacity: 0.2;
+}
+
+.container-513 {
+  width: 744px;
+  align-items: center;
+  gap: 16px;
+}
+
+.container-52 {
+  padding: 32px 8px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.button-box {
+  padding: 10px 16px 10px 16px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+
+  border-radius: 24px;
+  background: var(--Black, #00314F);
+  background: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
+}
+
 .sub-text {
   margin: 0;
   color: var(--Black, #00314F);
@@ -232,6 +381,7 @@ body {
   color: var(--Black, #00314F);
   color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
   text-align: center;
+
   font-family: Unbounded;
   font-size: 60px;
   font-style: normal;
@@ -321,6 +471,78 @@ body {
   letter-spacing: -0.48px;
 }
 
+.textbox-10 {
+  color: var(--Black, #00314F);
+  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
+  text-align: center;
+
+  font-family: Ysabeau Office;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  text-transform: uppercase;
+}
+
+.textbox-11 {
+  color: var(--Black, #00314F);
+  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
+
+  font-family: Ysabeau Office;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+
+.textbox-12 {
+  color: var(--White, #FFF);
+  color: var(--White, color(display-p3 1 1 1));
+  text-align: center;
+
+  font-family: Ysabeau Office;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+.textbox-15 {
+  color: var(--Black, #00314F);
+  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
+  text-align: center;
+
+  font-family: Ysabeau Office;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.28px;
+}
+
+.textbox-16 {
+  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
+  text-decoration-line: underline;
+}
+
+.textbox-20 {
+  color: var(--Black, #00314F);
+  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
+  text-align: center;
+  opacity: 0.6;
+
+  font-family: Ysabeau Office;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.28px;
+}
+
 .unionrectangle {
   width: 365px;
   height: 148px;
@@ -345,26 +567,8 @@ body {
   justify-content: space-around;
 }
 
-/* @keyframes blueframe {
-  0% {
-    transform: translate(0);
-  }
-  16.6% {
-    transform: translate(33%)
-  }
-  33.2% {
-    transform: translate(33.1%);
-  }
-  49.8% {
-    transform: translate(66%);
-  }
-  66.4% {
-    transform: translate(66.1%);
-  }
-  83% {
-    transform: translate(99.9%);
-  }
-  99% {
-    transform: translate(100%);
-  }
-} */
+.justify-space-between {
+  justify-content: space-between;
+}
+
+
