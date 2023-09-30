@@ -101,49 +101,52 @@
             <div class="container-5121 d-flex">
               <div class="container-51211 d-flex flex-column">
                 <div class="input-select-container d-flex flex-column">
-                  <div class="container-51221 d-flex">
+                  <div for="name" class="container-51221 d-flex">
                     <span class="textbox-11">ФИО<span class="star">*</span></span>
                   </div>
-                  <input type="text" placeholder="Лопанов" class="input-select d-flex justify-space-between">
+                  <input id="name" type="text" placeholder="Лопанов" class="input-select d-flex justify-space-between" name="name">
+                  <div class="invalid-feedback"></div>
                 </div>
                 <div class="input-select-container d-flex flex-column">
-                  <div class="container-51221 d-flex">
+                  <label for="cities" class="container-51221 d-flex">
                     <span class="textbox-11">Доставка<span class="star">*</span></span>
-                  </div>
-                  <select name="" id="cities" class="input-select d-flex justify-space-between">
-                    <option value="">Красноярск</option>
-                    <option value="">Москва</option>
-                    <option value="">Владимир</option>
-                    <option value="">Иваново</option>
+                  </label>
+                  <select id="cities" class="input-select d-flex justify-space-between" name="cities">
+                    <option value="Красноярск">Красноярск</option>
+                    <option value="Москва">Москва</option>
+                    <option value="Владимир">Владимир</option>
+                    <option value="Иваново">Иваново</option>
                   </select>
                 </div>
               </div>
               <div class="container-51211 d-flex flex-column">
                 <div class="input-select-container d-flex flex-column">
-                  <div class="container-51221 d-flex">
+                  <label for="phone" class="container-51221 d-flex">
                     <span class="textbox-11">Контактный телефон</span>
-                  </div>
-                  <input type="tel" placeholder="+7 (900) 000 00 00" class="input-select d-flex justify-space-between">
+                  </label>
+                  <input id="phone" type="tel" placeholder="+7 (900) 000 00 00" class="input-select d-flex justify-space-between" name="phone">
+                  <div class="invalid-feedback"></div>
                 </div>
                 <div class="input-select-container d-flex flex-column">
-                  <div class="container-51221 d-flex">
+                  <label for="email" class="container-51221 d-flex">
                     <span class="textbox-11">Email <span class="star">*</span></span>
-                  </div>
-                  <input type="text" placeholder="Lopanov92@yandex.ru" class="input-select d-flex justify-space-between">
+                  </label>
+                  <input id="email" type="text" placeholder="Lopanov92@yandex.ru" class="input-select d-flex justify-space-between" name="email">
+                  <div class="invalid-feedback"></div>
                 </div>
               </div>
             </div>
             <div class="input-select-container d-flex flex-column">
-              <div class="container-51221 d-flex">
+              <label for="delivering" class="container-51221 d-flex">
                 <span class="textbox-11">Адрес доставки</span>
-              </div>
-              <input type="text" placeholder="Красноярск, пр. Мира, 112..." class="input-select d-flex justify-space-between">
+              </label>
+              <input id="delivering" type="text" placeholder="Красноярск, пр. Мира, 112..." class="input-select d-flex justify-space-between" name="delivering">
             </div>
           </div>
           <div class="container-513 d-flex flex-column">
-            <div class="button-box d-flex justify-center">  
+            <button id="submit-button" class="button-box d-flex justify-center">  
               <span class="textbox-12">Оформить</span>
-            </div>
+            </button>
             <span class="textbox-15">Отправляя заказ, вы даёте <a href="https://www.bakenbooks.com/%D1%81%D0%BE%D0%B3%D0%BB%D0%B0%D1%81%D0%B8%D0%B5/" class="textbox-16">согласие на обработку персональных данных.</a></span>
           </div>
         </div>
