@@ -1,10 +1,10 @@
 {
-  "name": "webpack-package",
-  "version": "0.1.0",
+  "name": "baken",
+  "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest --colors"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
   "author": "Alexander Grechin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hexlet-boilerplates/webpack-package/issues"
+    "url": "https://github.com/MorbidDesire/Baken/issues"
   },
   "homepage": "https://github.com/MorbidDesire/Baken#readme",
   "devDependencies": {

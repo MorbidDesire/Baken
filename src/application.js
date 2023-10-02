@@ -1,5 +1,4 @@
 import keyBy from 'lodash/keyBy.js';
-import isEmpty from 'lodash/isEmpty.js';
 import * as yup from 'yup';
 import onChange from 'on-change';
 import render from './view';
@@ -17,8 +16,6 @@ const validate = (fields) => {
     return keyBy(e.inner, 'path');
   }
 };
-
-
 
 const app = () => {
   const elements = {
@@ -38,9 +35,7 @@ const app = () => {
   };
   const initialState = {
     form: {
-      valid: true,
       fillingProcess: true,
-      processError: null,
       errors: {},
       fields: {
         name: '',
@@ -67,16 +62,7 @@ const app = () => {
       state.form.fieldsUi.touched[fieldName] = true;
       const errors = validate(state.form.fields);
       state.form.errors = errors;
-      state.form.valid = isEmpty(errors);
     });
-  });
-
-  elements.submitButton.addEventListener('click', (e) => {
-    e.preventDefault();
-    state.form.fillingProcess = false;
-    const errors = validate(state.form.fields);
-    state.form.errors = errors;
-    state.form.valid = isEmpty(errors);
   });
 
   Object.entries(elements.conveerFields).forEach(([, fieldElement]) => {
@@ -95,7 +81,14 @@ const app = () => {
         iterations: Infinity,
       },
     );
-  })
+  });
+
+  elements.submitButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    state.form.fillingProcess = false;
+    const errors = validate(state.form.fields);
+    state.form.errors = errors;
+  });
 };
 
 export default app;

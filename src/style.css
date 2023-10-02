@@ -37,9 +37,6 @@ body {
 
 .main-container {
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .top-rectangle {
@@ -63,30 +60,25 @@ body {
 }
 
 .conveer1 {
-  display: flex;
   position: absolute;
   width: 100%;
-  justify-content: space-around;
 }
 
 .conveer2 {
-  display: flex;
   position: absolute;
   left: -100vw;
   width: 100%;
-  justify-content: space-around;
 }
 
 .sub-container {
   margin-top: 115px;
   height: 196px;
-  align-items: center;
 }
 
 .container-1 {
-  width: 1081.592px;
+  width: 1082px;
   height: 135px;
-  transform: rotate(-3.249deg);
+  transform: rotate(-3.25deg);
 }
 
 .container-2 {
@@ -97,32 +89,22 @@ body {
 .container-3 {
   width: 1128px;
   padding: 64px 0px;
-  flex-direction: column;
-  align-items: center;
   gap: 64px;
   background: #FFC7E7;
-  background: color(display-p3 0.9647 0.7882 0.898);
 }
 
 .container-31 {
-  flex-direction: column;
-  align-items: center;
   gap: 40px;
 }
 
 .container-32 {
   padding: 0px 40px;
-  justify-content: center;
   align-items: flex-start;
   gap: 40px;
   align-self: stretch;
 }
 
 .container-321 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 24px;
   flex: 1 0 0;
 }
@@ -130,7 +112,6 @@ body {
 .container-4 {
   display: inline-flex;
   padding: 96px 0px;
-  flex-direction: column;
   align-items: flex-start;
   gap: 64px;
 }
@@ -138,8 +119,6 @@ body {
 .container-41 {
   width: 1128px;
   padding: 0px 8px;
-  justify-content: center;
-  align-items: center;
   gap: 8px;
 }
 
@@ -151,23 +130,12 @@ body {
 .container-421 {
   width: 360px;
   padding: 40px 0px 64px 0px;
-  flex-direction: column;
-  align-items: center;
   gap: 40px;
   background: #FFF29A;
-  background: color(display-p3 0.9958 0.9507 0.6473);
 }
 
 .container-4211 {
   padding: 0px 24px;
-  align-items: center;
-  gap: 24px;
-  align-self: stretch;
-}
-
-.container-4212 {
-  padding: 0px 24px;
-  align-items: center;
   gap: 24px;
   align-self: stretch;
 }
@@ -179,17 +147,14 @@ body {
 
 .container-51 {
   padding: 64px 16px;
-  align-items: center;
   gap: 40px;
   align-self: stretch;
 
   background: var(--Blue, #C2D0F4);
-  background: var(--Blue, color(display-p3 0.7817 0.8142 0.9333));
 }
 
 .container-511 {
   padding: 0px 8px;
-  align-items: center;
   gap: 8px;
   align-self: stretch;
 }
@@ -215,7 +180,6 @@ body {
 .container-51221 {
   position: relative;
   padding: 0px 16px 8px 16px;
-  align-items: center;
   gap: 24px;
   align-self: stretch;
 }
@@ -223,11 +187,7 @@ body {
 .star {
   color: color(display-p3 0.9917 0.2562 0.2562);
 
-  font-family: Ysabeau Office;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  font: normal 500 18px/normal Ysabeau Office;
   letter-spacing: -0.36px;
 }
 
@@ -238,27 +198,22 @@ body {
 
 .input-select {
   padding: 10px 16px;
-  align-items: center;
   align-self: stretch;
   border: 0.1px solid;
 
   border-radius: 24px;
-  background: var(--White, color(display-p3 1 1 1));
+  background: var(--White, #FFF);
 }
 
 input {
-  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
+  color: var(--Black, #00314F);
 
-  font-family: Ysabeau Office;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  font: normal 500 20px/normal Ysabeau Office;
   letter-spacing: -0.48px;
 }
 
 #cities {
-  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
+  color: var(--Black, #00314F);
 
   background: var(--White, color(display-p3 1 1 1)) url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12' fill='none'%3e%3cpath d='M4 3.5L10 9.5L16 3.5' stroke='%23122F4A' style='stroke:%23122F4A;stroke:color(display-p3 0.0693 0.1849 0.2917);stroke-opacity:1;'/%3e%3c/svg%3e") no-repeat right;
   background-position-x: calc(100% - 12px);
@@ -266,23 +221,14 @@ input {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  font-family: Ysabeau Office;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  font: normal 500 20px/normal Ysabeau Office;
   letter-spacing: -0.48px;
 }
 
 input::placeholder {
   color: var(--Black, #00314F);
-  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
 
-  font-family: Ysabeau Office;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  font: normal 500 20px/normal Ysabeau Office;
   letter-spacing: -0.48px;
   opacity: 0.2;
 }
@@ -297,7 +243,6 @@ input::placeholder {
 }
 
 .invalid-feedback {
-  text-align: center;
   height: 16px;
   width: 100%;
   margin-top: .25rem;
@@ -308,23 +253,19 @@ input:focus {
   border-color: wheat;
 }
 
-
 .container-513 {
   width: 744px;
-  align-items: center;
   gap: 16px;
 }
 
 .container-52 {
   padding: 32px 8px;
-  align-items: center;
   gap: 8px;
   align-self: stretch;
 }
 
 .button-box {
   padding: 10px 16px 10px 16px;
-  align-items: center;
   gap: 8px;
   align-self: stretch;
   border: none;
@@ -332,53 +273,25 @@ input:focus {
 
   border-radius: 24px;
   background: var(--Black, #00314F);
-  background: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
 }
 
 .button-box:hover {
   background: #03446B;
-  background: color(display-p3 0.1072 0.2638 0.4083);
 }
 
 .sub-text {
   margin: 0;
   color: var(--Black, #00314F);
-  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
-  text-align: center;
 
-  font-family: Ysabeau Office;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font: normal 700 32px/normal Ysabeau Office;
   letter-spacing: -0.64px;
   text-transform: uppercase;
 }
 
 .textbox-1 {
   color: var(--Black, #00314F);
-  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
-  text-align: center;
-  font-family: Ysabeau Office;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: -0.4px;
-  text-transform: uppercase;
-  text-decoration: none;
-  height: 30px;
-}
 
-.textbox-2 {
-  color: var(--Black, #00314F);
-  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
-  text-align: center;
-  font-family: Ysabeau Office;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font: normal 700 20px/normal Ysabeau Office;
   letter-spacing: -0.4px;
   text-transform: uppercase;
   text-decoration: none;
@@ -387,167 +300,93 @@ input:focus {
 
 .textbox-3 {
   color: var(--Black, #00314F);
-  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
-  text-align: center;
 
-  font-family: Unbounded;
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
+  font: normal 800 60px/normal Unbounded;
   letter-spacing: -1.2px;
   text-transform: uppercase;
 }
 
 .textbox-4 {
   color: var(--Black, #00314F);
-  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
-  text-align: center;
-  font-family: Ysabeau Office;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+
+  font: normal 700 32px/normal Ysabeau Office;
   letter-spacing: -0.64px;
   text-transform: uppercase;
 }
 
 .textbox-5 {
   color: var(--Black, #00314F);
-  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
-  text-align: center;
-  font-family: Ysabeau Office;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 140%;
+
+  font: normal 500 18px/140% Ysabeau Office;
   letter-spacing: 1.26px;
   text-transform: uppercase;
 }
 
 .textbox-6 {
   color: var(--Black, #00314F);
-  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
   height: 100%;
-  text-align: center;
-  font-family: Ysabeau Office;
-  font-size: 102px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+
+  font: normal 600 102px/normal Ysabeau Office;
   letter-spacing: -2.04px;
   text-transform: uppercase;
 }
 
 .textbox-7 {
   color: var(--Black, #00314F);
-  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
-  text-align: center;
-  font-family: Ysabeau Office;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 120%;
+  
+  font: normal 500 24px/120% Ysabeau Office;
   letter-spacing: -0.48px;
 }
 
 .textbox-8 {
   color: var(--Black, #00314F);
-  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
-  text-align: center;
   width: 328px;
 
-  font-family: Ysabeau Office;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 140%;
+  font: normal 500 18px/140% Ysabeau Office;
   letter-spacing: 1.26px;
   text-transform: uppercase;
 }
 
-.textbox-9 {
-  align-self: stretch;
-  color: var(--Black, #00314F);
-  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
-  text-align: center;
-  font-family: Ysabeau Office;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 120%;
-  letter-spacing: -0.48px;
-}
-
 .textbox-10 {
   color: var(--Black, #00314F);
-  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
-  text-align: center;
 
-  font-family: Ysabeau Office;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font: normal 700 32px/normal Ysabeau Office;
   letter-spacing: -0.64px;
   text-transform: uppercase;
 }
 
 .textbox-11 {
   color: var(--Black, #00314F);
-  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
 
-  font-family: Ysabeau Office;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  font: normal 500 18px/normal Ysabeau Office;
   letter-spacing: -0.36px;
 }
 
 .textbox-12 {
   color: var(--White, #FFF);
-  color: var(--White, color(display-p3 1 1 1));
-  text-align: center;
 
-  font-family: Ysabeau Office;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  font: normal 500 20px/normal Ysabeau Office;
   letter-spacing: 2.4px;
   text-transform: uppercase;
 }
 
 .textbox-15 {
   color: var(--Black, #00314F);
-  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
-  text-align: center;
 
-  font-family: Ysabeau Office;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  font: normal 400 14px/normal Ysabeau Office;
   letter-spacing: -0.28px;
 }
 
 .textbox-16 {
-  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
+  color: var(--Black, #00314F);
   text-decoration-line: underline;
 }
 
 .textbox-20 {
   color: var(--Black, #00314F);
-  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
-  text-align: center;
   opacity: 0.6;
 
-  font-family: Ysabeau Office;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  font: normal 500 14px/normal Ysabeau Office;
   letter-spacing: -0.28px;
 }
 
@@ -555,7 +394,7 @@ input:focus {
   width: 365px;
   height: 148px;
   flex-shrink: 0;
-  fill: var(--White, color(display-p3 1 1 1));
+  fill: var(--White, #FFF);
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='366' height='148' viewBox='0 0 366 148' fill='none'%3e%3cpath d='M26.7051 148V116.285C11.1326 108.162 0.5 91.8553 0.5 73.0633C0.5 54.2713 11.1326 37.9647 26.7051 29.8414V0H339.295V31.7148C354.867 39.8381 365.5 56.1447 365.5 74.9367C365.5 93.7287 354.867 110.035 339.295 118.159V148H26.7051Z' fill='white' style='fill:white;fill:white;fill-opacity:1;'/%3e%3c/svg%3e");
 }
 
@@ -579,4 +418,10 @@ input:focus {
   justify-content: space-between;
 }
 
+.align-center {
+  align-items: center;
+}
 
+.text-center {
+  text-align: center;
+}
