@@ -20,16 +20,10 @@ body {
   height: 200px;
 }
 
-.deliver-frame {
-  width: 208px;
-  height: 208px;
-}
-
 #deliver-frame {
   position: relative;
   width: 300px;
   height: 360px;
-  flex-shrink: 0;
 }
 
 #deliver-frame-mini {
@@ -37,9 +31,8 @@ body {
   top: 57%;
   right: 57%;
   z-index: 2;
-  width: 153.962px;
-  height: 153.962px;
-  flex-shrink: 0;
+  width: 155px;
+  height: 155px;
 }
 
 .main-container {
@@ -55,14 +48,9 @@ body {
   width: 1128px;
   height: 463px;
   fill: var(--White, #FFF);
-  fill: var(--White, color(display-p3 1 1 1));
 }
 
 .lenta-container {
-  position: absolute;
-}
-
-.lenta-container1 {
   top: -150px;
   position: relative;
   width: 100vw;
@@ -87,42 +75,6 @@ body {
   left: -100vw;
   width: 100%;
   justify-content: space-around;
-}
-
-.bigrectangle {
-  width: 232.007px;
-  height: 314px;
-  flex-shrink: 0;
-}
-
-.textbox-1 {
-  color: var(--Black, #00314F);
-  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
-  text-align: center;
-  font-family: Ysabeau Office;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: -0.4px;
-  text-transform: uppercase;
-  text-decoration: none;
-  height: 30px;
-}
-
-.textbox-2 {
-  color: var(--Black, #00314F);
-  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
-  text-align: center;
-  font-family: Ysabeau Office;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: -0.4px;
-  text-transform: uppercase;
-  text-decoration: none;
-  height: 30px;
 }
 
 .sub-container {
@@ -349,7 +301,6 @@ input::placeholder {
   height: 16px;
   width: 100%;
   margin-top: .25rem;
-  font-size: 80%;
   color: #dc3545;
 }
 
@@ -402,6 +353,36 @@ input:focus {
   line-height: normal;
   letter-spacing: -0.64px;
   text-transform: uppercase;
+}
+
+.textbox-1 {
+  color: var(--Black, #00314F);
+  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
+  text-align: center;
+  font-family: Ysabeau Office;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  height: 30px;
+}
+
+.textbox-2 {
+  color: var(--Black, #00314F);
+  color: var(--Black, color(display-p3 0.0693 0.1849 0.2917));
+  text-align: center;
+  font-family: Ysabeau Office;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  height: 30px;
 }
 
 .textbox-3 {
