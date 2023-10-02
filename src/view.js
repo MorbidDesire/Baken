@@ -1,11 +1,11 @@
 import has from 'lodash/has.js';
 
 const renderError = (fieldElement, error) => {
-    fieldElement.classList.add('is-invalid');
-    const feedbackElement = fieldElement.nextElementSibling;
-    feedbackElement.textContent = error.message;
-  };
-  
+  fieldElement.classList.add('is-invalid');
+  const feedbackElement = fieldElement.nextElementSibling;
+  feedbackElement.textContent = error.message;
+};
+
 const renderErrors = (elements, errors, prevErrors, state) => {
   Object.entries(elements.fields).forEach(([fieldName, fieldElement]) => {
     const error = errors[fieldName];
@@ -20,13 +20,13 @@ const renderErrors = (elements, errors, prevErrors, state) => {
       fieldElement.nextElementSibling.textContent = '';
       return;
     }
-  
+
     if ((state.form.fieldsUi.touched[fieldName] && fieldHasError) || (!state.form.fillingProcess && fieldHasError)) {
       renderError(fieldElement, error);
     }
   });
 };
-  
+
 export default (elements, initialState) => (path, value, prevValue) => {
   switch (path) {
     case 'form.errors':
